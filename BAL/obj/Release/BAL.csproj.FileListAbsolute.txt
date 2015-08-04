@@ -1,0 +1,4 @@
+D:\Proyectos\EncuestasSatisfaccion\BAL\bin\Release\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\BAL\bin\Release\BAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\BAL\obj\Release\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\BAL\obj\Release\BAL.pdb

@@ -1,0 +1,24 @@
+﻿.divWaiting{   
+    position: absolute;
+    background-color: #FAFAFA;
+    z-index: 2147483647 !important;
+    opacity: 0.8;
+    overflow: hidden;
+    text-align: center; top: 0; left: 0;
+    height: 155%;
+    width: 100%;
+    padding-top:20%;
+} 
+
+.PopUpBackground
+{
+   background-color:Black;
+   filter:alpha(opacity=60);
+   opacity:0.6;
+   position:absolute;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}

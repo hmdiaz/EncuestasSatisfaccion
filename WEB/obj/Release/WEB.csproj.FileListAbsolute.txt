@@ -1,0 +1,7 @@
+D:\Proyectos\EncuestasSatisfaccion\WEB\bin\WEB.dll
+D:\Proyectos\EncuestasSatisfaccion\WEB\bin\WEB.pdb
+D:\Proyectos\EncuestasSatisfaccion\WEB\bin\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\WEB\bin\BAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\WEB\obj\Release\WEB.csprojResolveAssemblyReference.cache
+D:\Proyectos\EncuestasSatisfaccion\WEB\obj\Release\WEB.dll
+D:\Proyectos\EncuestasSatisfaccion\WEB\obj\Release\WEB.pdb

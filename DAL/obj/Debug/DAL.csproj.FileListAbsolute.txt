@@ -1,0 +1,7 @@
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Debug\DAL.dll
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Debug\DAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Debug\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Debug\BAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Proyectos\EncuestasSatisfaccion\DAL\obj\Debug\DAL.dll
+D:\Proyectos\EncuestasSatisfaccion\DAL\obj\Debug\DAL.pdb

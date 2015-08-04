@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Publicaciones\Preproducción\EncuestasKVD\EncuestasKVDWCF" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="EncuestaService.svc" publishTime="10/07/2014 15:27:26" />
+    <file relUrl="bin/WCF.pdb" publishTime="06/26/2015 11:27:31" />
+    <file relUrl="bin/DAL.pdb" publishTime="06/26/2015 11:27:28" />
+    <file relUrl="Web.config" publishTime="06/18/2015 15:06:59" />
+    <file relUrl="bin/WCF.dll" publishTime="06/26/2015 11:27:31" />
+    <file relUrl="CatalogoServices.svc" publishTime="10/20/2014 09:09:09" />
+    <file relUrl="bin/BAL.dll" publishTime="06/26/2015 11:27:27" />
+    <file relUrl="bin/DAL.dll" publishTime="06/26/2015 11:27:28" />
+    <file relUrl="bin/BAL.pdb" publishTime="06/26/2015 11:27:27" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,7 @@
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Release\DAL.dll
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Release\DAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Release\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\DAL\bin\Release\BAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Proyectos\EncuestasSatisfaccion\DAL\obj\Release\DAL.dll
+D:\Proyectos\EncuestasSatisfaccion\DAL\obj\Release\DAL.pdb

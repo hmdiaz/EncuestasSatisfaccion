@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:47456/EncuestaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BAL" />
+  <xs:element name="ListarEncuestasPorUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEncuestasPorUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ListarEncuestasPorUsuarioResult" nillable="true" type="q1:ArrayOfEncuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPreguntasDisponibles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+        <xs:element minOccurs="0" name="EncuestaNo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPreguntasDisponiblesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ListarPreguntasDisponiblesResult" nillable="true" type="q2:ArrayOfGrupoPregunta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPreguntas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+        <xs:element minOccurs="0" name="GrupoPreguntaID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPreguntasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerPreguntasResult" nillable="true" type="q3:ArrayOfFormulario" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarEncuesta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProyectoID" type="xs:int" />
+        <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+        <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsuarioAuditID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarEncuestaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarEncuestaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarPregunta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProyectoID" type="xs:int" />
+        <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+        <xs:element minOccurs="0" name="TipoPreguntaID" type="xs:int" />
+        <xs:element minOccurs="0" name="PreguntaID" type="xs:int" />
+        <xs:element minOccurs="0" name="OpcionID" type="xs:int" />
+        <xs:element minOccurs="0" name="UsuarioAuditID" type="xs:int" />
+        <xs:element minOccurs="0" name="EncuestaNo" type="xs:int" />
+        <xs:element minOccurs="0" name="TextoRespuesta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarPreguntaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarPreguntaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerificarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VerificarUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioEncuestaID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerUsuarioResult" nillable="true" type="q4:UsuarioEncuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarUsuarioEncuesta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioEncuestaID" type="xs:int" />
+        <xs:element minOccurs="0" name="PrimerNombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoNombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreEntidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NombreProyecto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CargoFuncionario" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarUsuarioEncuestaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActualizarUsuarioEncuestaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEstatusEncuestasPorUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarEstatusEncuestasPorUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ListarEstatusEncuestasPorUsuarioResult" nillable="true" type="q5:ArrayOfEncuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalizarEncuesta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EncuestaNo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FinalizarEncuestaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FinalizarEncuestaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectPreguntasFaltantes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EncuestaNo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectPreguntasFaltantesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="SelectPreguntasFaltantesResult" nillable="true" type="q6:ArrayOfPregunta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

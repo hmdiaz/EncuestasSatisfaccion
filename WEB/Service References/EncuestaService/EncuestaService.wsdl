@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EncuestaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:47456/EncuestaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:47456/EncuestaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:47456/EncuestaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BAL" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEncuestaService_ListarEncuestasPorUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEncuestasPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ListarEncuestasPorUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEncuestasPorUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ListarPreguntasDisponibles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPreguntasDisponibles" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ListarPreguntasDisponibles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPreguntasDisponiblesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ObtenerPreguntas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPreguntas" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ObtenerPreguntas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPreguntasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_GuardarEncuesta_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarEncuesta" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_GuardarEncuesta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarEncuestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_GuardarPregunta_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarPregunta" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_GuardarPregunta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarPreguntaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_VerificarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_VerificarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ObtenerUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ObtenerUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ActualizarUsuarioEncuesta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuarioEncuesta" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ActualizarUsuarioEncuesta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuarioEncuestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ListarEstatusEncuestasPorUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEstatusEncuestasPorUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_ListarEstatusEncuestasPorUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarEstatusEncuestasPorUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_FinalizarEncuesta_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinalizarEncuesta" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_FinalizarEncuesta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinalizarEncuestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_SelectPreguntasFaltantes_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPreguntasFaltantes" />
+  </wsdl:message>
+  <wsdl:message name="IEncuestaService_SelectPreguntasFaltantes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPreguntasFaltantesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEncuestaService">
+    <wsdl:operation name="ListarEncuestasPorUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/ListarEncuestasPorUsuario" message="tns:IEncuestaService_ListarEncuestasPorUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/ListarEncuestasPorUsuarioResponse" message="tns:IEncuestaService_ListarEncuestasPorUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreguntasDisponibles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/ListarPreguntasDisponibles" message="tns:IEncuestaService_ListarPreguntasDisponibles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/ListarPreguntasDisponiblesResponse" message="tns:IEncuestaService_ListarPreguntasDisponibles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPreguntas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/ObtenerPreguntas" message="tns:IEncuestaService_ObtenerPreguntas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/ObtenerPreguntasResponse" message="tns:IEncuestaService_ObtenerPreguntas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarEncuesta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/GuardarEncuesta" message="tns:IEncuestaService_GuardarEncuesta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/GuardarEncuestaResponse" message="tns:IEncuestaService_GuardarEncuesta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarPregunta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/GuardarPregunta" message="tns:IEncuestaService_GuardarPregunta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/GuardarPreguntaResponse" message="tns:IEncuestaService_GuardarPregunta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/VerificarUsuario" message="tns:IEncuestaService_VerificarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/VerificarUsuarioResponse" message="tns:IEncuestaService_VerificarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/ObtenerUsuario" message="tns:IEncuestaService_ObtenerUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/ObtenerUsuarioResponse" message="tns:IEncuestaService_ObtenerUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuarioEncuesta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/ActualizarUsuarioEncuesta" message="tns:IEncuestaService_ActualizarUsuarioEncuesta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/ActualizarUsuarioEncuestaResponse" message="tns:IEncuestaService_ActualizarUsuarioEncuesta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarEstatusEncuestasPorUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/ListarEstatusEncuestasPorUsuario" message="tns:IEncuestaService_ListarEstatusEncuestasPorUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/ListarEstatusEncuestasPorUsuarioResponse" message="tns:IEncuestaService_ListarEstatusEncuestasPorUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinalizarEncuesta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/FinalizarEncuesta" message="tns:IEncuestaService_FinalizarEncuesta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/FinalizarEncuestaResponse" message="tns:IEncuestaService_FinalizarEncuesta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectPreguntasFaltantes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEncuestaService/SelectPreguntasFaltantes" message="tns:IEncuestaService_SelectPreguntasFaltantes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEncuestaService/SelectPreguntasFaltantesResponse" message="tns:IEncuestaService_SelectPreguntasFaltantes_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEncuestaService" type="tns:IEncuestaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarEncuestasPorUsuario">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/ListarEncuestasPorUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPreguntasDisponibles">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/ListarPreguntasDisponibles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPreguntas">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/ObtenerPreguntas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarEncuesta">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/GuardarEncuesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarPregunta">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/GuardarPregunta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/VerificarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/ObtenerUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuarioEncuesta">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/ActualizarUsuarioEncuesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarEstatusEncuestasPorUsuario">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/ListarEstatusEncuestasPorUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalizarEncuesta">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/FinalizarEncuesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPreguntasFaltantes">
+      <soap:operation soapAction="http://tempuri.org/IEncuestaService/SelectPreguntasFaltantes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EncuestaService">
+    <wsdl:port name="BasicHttpBinding_IEncuestaService" binding="tns:BasicHttpBinding_IEncuestaService">
+      <soap:address location="http://localhost:47456/EncuestaService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

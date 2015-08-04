@@ -1,0 +1,9 @@
+D:\Proyectos\EncuestasSatisfaccion\WCF\bin\WCF.dll
+D:\Proyectos\EncuestasSatisfaccion\WCF\bin\WCF.pdb
+D:\Proyectos\EncuestasSatisfaccion\WCF\bin\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\WCF\bin\DAL.dll
+D:\Proyectos\EncuestasSatisfaccion\WCF\bin\BAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\WCF\bin\DAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\WCF\obj\Release\WCF.csprojResolveAssemblyReference.cache
+D:\Proyectos\EncuestasSatisfaccion\WCF\obj\Release\WCF.dll
+D:\Proyectos\EncuestasSatisfaccion\WCF\obj\Release\WCF.pdb

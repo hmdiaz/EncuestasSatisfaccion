@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ef94a2c5-3bcc-464a-b860-9500490898cb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+      <CollectionMapping TypeName="System.Collections.SortedList" Category="Dictionary" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:47456/EncuestaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EncuestaService.xsd" MetadataType="Schema" ID="32b60608-1412-4112-9b68-c83d86be645a" SourceId="1" SourceUrl="http://localhost:47456/EncuestaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EncuestaService.disco" MetadataType="Disco" ID="e8b87e48-906a-41b7-8f0e-558444be1db5" SourceId="1" SourceUrl="http://localhost:47456/EncuestaService.svc?disco" />
+    <MetadataFile FileName="EncuestaService.wsdl" MetadataType="Wsdl" ID="5a23e082-8ef3-49c2-831e-f2462d767fe3" SourceId="1" SourceUrl="http://localhost:47456/EncuestaService.svc?wsdl" />
+    <MetadataFile FileName="EncuestaService1.xsd" MetadataType="Schema" ID="edc1d0f8-efb6-4048-a5b4-b46389b5236d" SourceId="1" SourceUrl="http://localhost:47456/EncuestaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EncuestaService2.xsd" MetadataType="Schema" ID="39ca331c-2161-46e8-acc3-8f9f3136ac44" SourceId="1" SourceUrl="http://localhost:47456/EncuestaService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,4 @@
+D:\Proyectos\EncuestasSatisfaccion\BAL\bin\Debug\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\BAL\bin\Debug\BAL.pdb
+D:\Proyectos\EncuestasSatisfaccion\BAL\obj\Debug\BAL.dll
+D:\Proyectos\EncuestasSatisfaccion\BAL\obj\Debug\BAL.pdb

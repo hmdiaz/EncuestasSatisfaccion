@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BAL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BAL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEncuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Encuesta" nillable="true" type="tns:Encuesta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEncuesta" nillable="true" type="tns:ArrayOfEncuesta" />
+  <xs:complexType name="Encuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EncuestaID" type="xs:int" />
+      <xs:element minOccurs="0" name="FechaDiligenciamiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreFormulario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreProyecto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProyectoID" type="xs:int" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalPreguntas" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalRespuestas" type="xs:int" />
+      <xs:element minOccurs="0" name="length" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Encuesta" nillable="true" type="tns:Encuesta" />
+  <xs:complexType name="ArrayOfGrupoPregunta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupoPregunta" nillable="true" type="tns:GrupoPregunta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupoPregunta" nillable="true" type="tns:ArrayOfGrupoPregunta" />
+  <xs:complexType name="GrupoPregunta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+      <xs:element minOccurs="0" name="GrupoPreguntaID" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreGrupoPregunta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroGrupo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GrupoPregunta" nillable="true" type="tns:GrupoPregunta" />
+  <xs:complexType name="ArrayOfFormulario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Formulario" nillable="true" type="tns:Formulario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFormulario" nillable="true" type="tns:ArrayOfFormulario" />
+  <xs:complexType name="Formulario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+      <xs:element minOccurs="0" name="GrupoPreguntaID" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreFormulario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreGrupo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroOpcion" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroPregunta" type="xs:int" />
+      <xs:element minOccurs="0" name="Obligatoria" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OpcionID" type="xs:int" />
+      <xs:element minOccurs="0" name="PreguntaID" type="xs:int" />
+      <xs:element minOccurs="0" name="PuntajeOpcion" type="xs:double" />
+      <xs:element minOccurs="0" name="TextoOpcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TextoPregunta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoCampoID" type="xs:int" />
+      <xs:element minOccurs="0" name="TipoPreguntaID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Formulario" nillable="true" type="tns:Formulario" />
+  <xs:complexType name="UsuarioEncuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CargoFuncionario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElectronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EsAdministrador" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FechaDiligenciamiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NombreEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreProyecto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoNombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioEncuestaID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsuarioEncuesta" nillable="true" type="tns:UsuarioEncuesta" />
+  <xs:complexType name="ArrayOfPregunta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pregunta" nillable="true" type="tns:Pregunta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPregunta" nillable="true" type="tns:ArrayOfPregunta" />
+  <xs:complexType name="Pregunta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FormularioID" type="xs:int" />
+      <xs:element minOccurs="0" name="NumeroPregunta" type="xs:int" />
+      <xs:element minOccurs="0" name="PreguntaID" type="xs:int" />
+      <xs:element minOccurs="0" name="TextoPregunta" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pregunta" nillable="true" type="tns:Pregunta" />
+</xs:schema>
